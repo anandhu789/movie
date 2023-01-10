@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST">
+    {% csrf_token %}
+    <h3>
+        <p style="text-align:center">Do you want to delete this movie?<br>
+          <input type="submit" value="YES"  style ="background-color:red;border: none; color: white;"/>
+          <a type="btn" style ="background-color:#00BFFF;border: none; color: white;" href="/">NO</a>
+        </p>
+    </h3>
+</form>
+{% endblock %}
